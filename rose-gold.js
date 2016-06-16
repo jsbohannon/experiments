@@ -1,0 +1,10 @@
+var gold = {a:1};
+console.log("gold.a : " + gold.a);
+console.log("gold.z : " + gold.z);
+var rose = Object.create(gold);
+rose.b = 2;
+gold.z = 3;
+console.log("rose.a : " + rose.a);
+console.log("rose.b : " + rose.b);
+console.log("rose.z : " + rose.z);
+console.log("rose.toString() : " + rose.toString());
